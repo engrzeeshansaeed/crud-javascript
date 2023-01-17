@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Detail Panal</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Enter User Details</h1>
+    </header>
+    <main>
+      <!-- User input Form -->
+      <section class="form">
+        <form
+          onsubmit="event.preventDefault();onFormSubmit();"
+          class="userForm"
+        >
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Enter First Name"
+            required
+          />
+          <br /><br />
+
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Enter Last Name"
+            required
+          /><br /><br />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email Address"
+            required
+          /><br /><br />
+
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Enter Your Age"
+            required
+          /><br /><br />
+
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter Your Phone"
+            required
+          /><br /><br />
+
+          <input type="submit" value="Submit" id="submit" />
+          <input type="reset" value="Reset" id="reset" />
+        </form>
+      </section>
+
+      <!-- User Table -->
+      <section class="table">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>Phone</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
